@@ -25,3 +25,16 @@ Some useful kinematics parameters:
 - Wheelbase = 2.65 meters
 - Track width = 1.638 meters
 - Wheel radius = 0.36 meters
+
+## Sensors
+
+### Fixations
+
+- **Laser:** origin: xyz="0 0 1.0" rpy="0 0 0", axis: xyz="0 1 0" rpy="0 0 0"
+- **IMU:** origin: xyz="0 0 0.5" rpy="0 0 0" axis: xyz="0 0.5 0" rpy="0 0 0"
+
+### Topics
+
+- **Laser:** /$(arg robot_name)/audi_laser_scan
+- **IMU:** /$(arg robot_name)/imu
+- **Ground Truth Odom:** /audi_odom, /orange/odom and /blue/odom
