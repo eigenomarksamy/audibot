@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+ <include file="$(find audibot_odometry)/launch/odom_blue_audi.launch"/>
+ <include file="$(find audibot_odometry)/launch/odom_orange_audi.launch"/>
+
+</launch>

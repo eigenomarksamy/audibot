@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="audibot_control" name="twistlat_blue_audi" type="twistlat_blue_audi.py" output="screen">
+  </node >
+  <node pkg="audibot_control" name="twistlot_blue_audi" type="twistlot_blue_audi.py" output="screen">
+  </node >
+
+</launch>

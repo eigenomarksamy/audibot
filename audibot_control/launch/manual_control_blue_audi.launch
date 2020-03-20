@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+ <include file="$(find audibot_control)/launch/control_blue_audi.launch"/>
+ <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" args="/cmd_vel:=/blue/cmd_vel" output="screen"/>
+
+</launch>
