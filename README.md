@@ -38,3 +38,7 @@ Some useful kinematics parameters:
 - **Laser:** /$(arg robot_name)/audi_laser_scan
 - **IMU:** /$(arg robot_name)/imu
 - **Ground Truth Odom:** /audi_odom, /orange/odom and /blue/odom
+
+## Command
+
+- **CMD_VEL:** /audi_twist_cmd, /orange/cmd_vel and /blue/cmd_vel
