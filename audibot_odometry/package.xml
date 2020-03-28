@@ -2,7 +2,7 @@
 <package format="2">
   <name>audibot_odometry</name>
   <version>0.0.0</version>
-  <description>The audibot_odometry package</description>
+  <description>The audibot_odometry package, groundtruth odom publishing of audibot vehicle(s)</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
