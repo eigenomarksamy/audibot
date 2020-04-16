@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="audibot_odometry" name="blue_odom" type="odom_generic.py" args="blue" output="screen">
+  </node >
+
+  <node pkg="audibot_odometry" name="orange_odom" type="odom_generic.py" args="orange" output="screen">
+  </node >
+
+</launch>

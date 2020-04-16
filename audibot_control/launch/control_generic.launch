@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="audibot_control" name="twistlat_blue" type="twistlat_generic.py" args="blue" output="screen">
+  </node >
+  <node pkg="audibot_control" name="twistlot_blue" type="twistlot_generic.py" args="blue" output="screen">
+  </node >
+
+  <node pkg="audibot_control" name="twistlat_orange" type="twistlat_generic.py" args="orange" output="screen">
+  </node >
+  <node pkg="audibot_control" name="twistlot_orange" type="twistlot_generic.py" args="orange" output="screen">
+  </node >
+
+</launch>
