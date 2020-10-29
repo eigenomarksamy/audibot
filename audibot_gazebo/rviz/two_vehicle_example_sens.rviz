@@ -6,10 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /BlueVehicle1
-        - /OrangeVehicle1
-        - /OrangeLaserScan1
-      Splitter Ratio: 0.5
+      Splitter Ratio: 0.769444466
     Tree Height: 415
   - Class: rviz/Selection
     Name: Selection
@@ -39,7 +36,7 @@ Visualization Manager:
       Cell Size: 1
       Class: rviz/Grid
       Color: 160; 160; 164
-      Enabled: true
+      Enabled: false
       Line Style:
         Line Width: 0.0299999993
         Value: Lines
@@ -52,7 +49,7 @@ Visualization Manager:
       Plane: XY
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
-      Value: true
+      Value: false
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
@@ -68,6 +65,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -126,6 +128,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -191,7 +198,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
-      Size (Pixels): 3
+      Size (Pixels): 1
       Size (m): 0.00999999978
       Style: Points
       Topic: /blue/audi_laser_scan
@@ -229,6 +236,162 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        blue/base_footprint:
+          Value: false
+        blue/base_link:
+          Value: true
+        blue/imu_link:
+          Value: true
+        blue/lasor_link:
+          Value: true
+        blue/steer_fl:
+          Value: false
+        blue/steer_fr:
+          Value: false
+        blue/wheel_fl:
+          Value: false
+        blue/wheel_fr:
+          Value: false
+        blue/wheel_rl:
+          Value: false
+        blue/wheel_rr:
+          Value: false
+        orange/base_footprint:
+          Value: false
+        orange/base_link:
+          Value: true
+        orange/imu_link:
+          Value: true
+        orange/lasor_link:
+          Value: true
+        orange/steer_fl:
+          Value: false
+        orange/steer_fr:
+          Value: false
+        orange/wheel_fl:
+          Value: false
+        orange/wheel_fr:
+          Value: false
+        orange/wheel_rl:
+          Value: false
+        orange/wheel_rr:
+          Value: false
+        world:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          blue/base_footprint:
+            blue/base_link:
+              blue/imu_link:
+                {}
+              blue/lasor_link:
+                {}
+              blue/steer_fl:
+                blue/wheel_fl:
+                  {}
+              blue/steer_fr:
+                blue/wheel_fr:
+                  {}
+              blue/wheel_rl:
+                {}
+              blue/wheel_rr:
+                {}
+          orange/base_footprint:
+            orange/base_link:
+              orange/imu_link:
+                {}
+              orange/lasor_link:
+                {}
+              orange/steer_fl:
+                orange/wheel_fl:
+                  {}
+              orange/steer_fr:
+                orange/wheel_fr:
+                  {}
+              orange/wheel_rl:
+                {}
+              orange/wheel_rr:
+                {}
+      Update Interval: 0
+      Value: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 100
+      Name: BlueGroundTruthOdometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.300000012
+        Head Radius: 0.100000001
+        Shaft Length: 1
+        Shaft Radius: 0.0500000007
+        Value: Arrow
+      Topic: ""
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 100
+      Name: OrangeGroundTruthOdometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.300000012
+        Head Radius: 0.100000001
+        Shaft Length: 1
+        Shaft Radius: 0.0500000007
+        Value: Arrow
+      Topic: ""
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -254,25 +417,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 23.7053452
+      Distance: 11.7729702
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.840462625
-        Y: -0.986363888
-        Z: -0.0443587154
+        X: 1.6101371
+        Y: 2.54194045
+        Z: 0.187147617
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.680398345
+      Pitch: 0.795398235
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.32539809
+      Yaw: 5.64358139
     Saved: ~
 Window Geometry:
   Displays:
